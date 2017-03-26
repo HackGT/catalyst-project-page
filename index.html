@@ -3,27 +3,51 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<title>My Project Page</title>
-		<!--the title tag is how your browser sees the name of your website-->
-		<!--when your browser displays the name of the website in the browser's tab, this is what it uses-->
 	</head>
 	<body>
-		<!--in bootstrap, the container class is where we'll usually want to put all of our elements-->
 		<div class="container">
-			<h1>Let's learn bootstrap!</h1>
+			<br/>
+			<!--this is the break tag, and will add a little bit of padding between the top of the page and our jumbotron-->
+			<div class="jumbotron">
+				<!--we'll put our main project info in here-->
+				<!--if you want to see more bootstrap elements that you can use, check out http://getbootstrap.com/components-->
 
-			<p>Now that we know most of the basics of HTML, we're going to try and start making a project page to showcase what we've made at Catalyst</p>
-			<p>A few more helpful HTML elements we'll learn are the 'a' tag and the 'img' tag</p>
+				<h1>Ketchup bot</h1>
+				<!--^Change this accordingly, of course-->
+				<p>Our super cool project that shoots ketchup everywhere</p>
 
-			<p>To make links in HTML, we use the 'a' tag.</p>
-			<p>You can link to sites like <a href="http://google.com">this!</a></p>
-			<p>The 'href' attribute in the 'a' tag represents the destination we're trying to go to</p>
-			<p>Make sure you add the 'http://' to the front of your link, otherwise it'll act funny</p>
 
-			<p>The 'img' tag lets us embed imaged</p>
-			<img src="http://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-			<p>We put the image url in the 'src' attribute, not an 'href' attribute</p>
-			<p>Also, notice that the 'img' tag doesn't have a closing tag</p>
-			<p>This is because images don't really have anything inside of them</p>
+				<!--change the href here to point to your project's GitHub page - if you don't have a page, just delete the line below this-->
+				<p><a class="btn btn-primary btn-lg" href="http://github.com/" role="button">Check out our GitHub!</a></p>
+			</div>
+
+			<h2>More about our project</h2>
+			<!--the code below will split the page in half, so we can have content next to itself-->
+			<!--this is part of Bootstrap's awesome grid system, which divides the page into 12ths-->
+			<!--the reason the screen is split in half is because we say 'col-md-6'-->
+			<!--if we wanted to split the screen into thirds, we'd have three divs with 'col-md-4' as the class, because 12/3 = 4-->
+			<div class="row">
+				<div class="col-md-6">
+					<p>Some reasons why our project is the coolest</p>
+					<ul>
+						<li>We made it</li>
+						<li>It's the start of the robot takeover</li>
+						<li>I like ketchup</li>
+						<li>It supports mustard too</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<img src="https://media.giphy.com/media/MPVw7FnPuLMgo/giphy.gif" alt="The future is now" class="img-rounded">
+					<p>Check out this pretty picture of our project</p>
+				</div>
+			</div>
+			<p>Check out our super cool demo video too!</p>
+			<!--this is how we embed youtube videos-->
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/4WX58CZwyiU" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<h3>Thanks for checking out out site!</h3>
+			<p>Feel free to email us at <a href="mailto:test@test.com">test@test.com</a></p>
 		</div>
 	</body>
 </html>
